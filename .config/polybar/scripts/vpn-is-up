@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if nmcli c show --active | grep vpn-em.memsql 2>&1 > /dev/null ; then
+    exit 0
+fi
+exit 1
+

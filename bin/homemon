@@ -1,0 +1,6 @@
+#!/bin/sh
+
+xrandr --output eDP-1 --primary --brightness .75 --mode 1920x1080 --rotate normal --pos 760x1440 --output HDMI-1 --brightness 1.5 --mode 3440x1440 --rotate normal --pos 0x0 --verbose
+
+~/.config/polybar/launch.sh
+

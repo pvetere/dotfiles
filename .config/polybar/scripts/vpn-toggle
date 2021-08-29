@@ -1,0 +1,9 @@
+#!/bin/sh
+
+MYDIR=$(cd $(dirname $0) && pwd)
+if $MYDIR/vpn-is-up ; then 
+    nmcli c down vpn-em.memsql
+else
+    nmcli c up vpn-em.memsql
+fi
+

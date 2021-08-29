@@ -1,0 +1,47 @@
+#!/bin/zsh
+
+trap 'echo "trap"; pkill -9 -P $$; wait; exit' SIGINT
+
+while getopts “f:k” opt; do
+  case $opt in
+      f) SCRIPT_FILE=$(readlink -f $OPTARG) ;;
+      k) KILL=1 ;;
+  esac
+done
+shift $(expr $OPTIND - 1)
+
+pkill -9 memsqld;
+cd $PATH_TO_MEMSQL/debug;
+rm -rf data;
+./memsqld --workload-management=false --enable-background-statistics-collection=false --leaf-failure-detection=0 --aggregator-failure-detection=0 --internal-autostats-sampling-enabled=false --minimum-core-count=1 --port 3306 "$@" &
+until memclient 3306 -e 'select 1' > /dev/null; do
+      sleep 1
+done
+memclient 3306 < $HOME/memsql/memsqltest/sharding/setup.sql;
+memclient 3306 -e 'create database if not exists x_db';
+
+if [ -n "$SCRIPT_FILE" ]; then
+    memclient 3306 -vvv < $SCRIPT_FILE;
+    if [ -n "$KILL" ]; then
+        pkill -9 memsqld
+    fi
+fi
+
+wait
+~/memsql/lockfreetest: cat $(which memsingle)  
+
+#!/bin/zsh
+
+trap 'echo "trap"; pkill -9 -P $$; wait' 0
+
+pkill -9 memsqld;
+cd $PATH_TO_MEMSQL/debug;
+rm -rf data;
+rm -rf debug;
+./memsqld --minimum-core-count=1 --singlebox --port 3306 "$@" &
+until memclient 3306 -e 'select 1' > /dev/null; do
+      sleep 1
+done
+memclient 3306 -e 'create database if not exists x_db';
+wait
+

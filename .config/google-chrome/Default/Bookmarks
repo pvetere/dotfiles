@@ -1,0 +1,188 @@
+{
+   "checksum": "272b85344a450a058f39fb1553795ded",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13273775444947189",
+            "guid": "f3fec95e-dabe-4776-bf3f-9cbb5a5a6f0e",
+            "id": "21",
+            "name": "Okta",
+            "type": "url",
+            "url": "https://login.internal.singlestore.com/app/UserHome"
+         }, {
+            "date_added": "13273686569066064",
+            "guid": "9afae568-2e03-4966-b5f8-af0e0add0919",
+            "id": "16",
+            "name": "Mail",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "13273686516049269",
+            "guid": "40be116d-4306-4d4d-a07d-91fe713a2ad7",
+            "id": "15",
+            "name": "Calendar",
+            "type": "url",
+            "url": "https://calendar.google.com/calendar/u/0/r?tab=mc"
+         }, {
+            "date_added": "13273817679441489",
+            "guid": "79fb1d02-032e-4ee0-8549-e714d7fd6ee7",
+            "id": "25",
+            "name": "Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/my-drive"
+         }, {
+            "date_added": "13273683835245553",
+            "guid": "bf1e7542-3aa0-4f53-a142-b2744f5a4926",
+            "id": "9",
+            "name": "Grizzly",
+            "type": "url",
+            "url": "https://grizzly.internal.memcompute.com/"
+         }, {
+            "date_added": "13273684111106445",
+            "guid": "cc7d4149-1319-42ba-ae72-7267afbc6cf8",
+            "id": "10",
+            "name": "JIRA",
+            "type": "url",
+            "url": "https://memsql.atlassian.net/secure/Dashboard.jspa?lastVisited=true"
+         }, {
+            "date_added": "13273817595569785",
+            "guid": "de11c7cd-9cf1-4a7a-8750-1d6956cf50e5",
+            "id": "24",
+            "name": "Confluence",
+            "type": "url",
+            "url": "https://memsql.atlassian.net/wiki/home"
+         }, {
+            "date_added": "13273857692086198",
+            "guid": "6fb2d58f-4b04-44af-a0d2-d37bb0c1f015",
+            "id": "26",
+            "name": "LaunchPad",
+            "type": "url",
+            "url": "https://memsql.atlassian.net/wiki/spaces/LAUNCH/overview"
+         }, {
+            "date_added": "13273771489430294",
+            "guid": "f81ab5e6-f167-40da-b1b4-f27d38587181",
+            "id": "20",
+            "name": "memsql",
+            "type": "url",
+            "url": "https://github.com/memsql/memsql"
+         }, {
+            "date_added": "13273683765286564",
+            "guid": "7d0365b1-6fc2-4073-85b7-04f0e8b3ffdb",
+            "id": "8",
+            "name": "GitLab",
+            "type": "url",
+            "url": "https://gitlab.cloud.memcompute.com/"
+         }, {
+            "date_added": "13274294157409108",
+            "guid": "02c8943c-b932-43d0-ab3b-2b2b46b7e825",
+            "id": "29",
+            "name": "Portal",
+            "type": "url",
+            "url": "https://portal.singlestore.com/admin"
+         }, {
+            "date_added": "13274294369207425",
+            "guid": "3dbadf4c-5271-4799-af13-375f4873968f",
+            "id": "30",
+            "name": "Freya",
+            "type": "url",
+            "url": "https://freya.internal.memcompute.com/"
+         }, {
+            "children": [ {
+               "date_added": "13273684243617551",
+               "guid": "b8427bfd-0471-4dc3-b9b6-61efddd46501",
+               "id": "13",
+               "name": "Code review and check-in process - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/6684676/Code+review+and+check-in+process"
+            }, {
+               "date_added": "13273684311332052",
+               "guid": "e7a32c6a-5ea5-472d-82c2-8c5ad3e5c937",
+               "id": "14",
+               "name": "Engineering New Hire Guide - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/72515733/Engineering+New+Hire+Guide"
+            }, {
+               "date_added": "13273701045907253",
+               "guid": "5c008798-fb6d-4083-814f-5fb381094d2d",
+               "id": "17",
+               "name": "MemSQL dev builds - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/39780576/MemSQL+dev+builds"
+            }, {
+               "date_added": "13273702082683519",
+               "guid": "58a361b5-1ffb-40e5-9f7f-8db96b725c94",
+               "id": "18",
+               "name": "Engineering dev environment setup - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/315883521/Engineering+dev+environment+setup#Engineeringdevenvironmentsetup-BuildMemSQL"
+            }, {
+               "date_added": "13273768785642141",
+               "guid": "e45da589-057e-4e2e-bbbc-8c9f6cdeb249",
+               "id": "19",
+               "name": "Why is GO111MODULE everywhere, and everything about Go Modules (updated with Go 1.16) | maelvls dev blog",
+               "type": "url",
+               "url": "https://maelvls.dev/go111module-everywhere/"
+            }, {
+               "date_added": "13273775802296240",
+               "guid": "fecadbaf-cc50-4a19-bae0-7ffbf1717daa",
+               "id": "22",
+               "name": "Developing MemSQL - Google Slides",
+               "type": "url",
+               "url": "https://docs.google.com/presentation/d/1-1uabdhUQ8K_UVn9Yc2a_WiQoNTN0y2rXomZMcr4n78/edit#slide=id.g5dec55c6f7_0_0"
+            }, {
+               "date_added": "13273817477849249",
+               "guid": "621ea3ea-536b-4016-ad09-c19b3a060b85",
+               "id": "23",
+               "name": "Arc Reference Guide/Tutorial - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/475365448/Arc+Reference+Guide+Tutorial"
+            }, {
+               "date_added": "13274292925228770",
+               "guid": "5c9ec278-1acd-4729-ba98-a698a3174d05",
+               "id": "28",
+               "name": "Get Started with C++ on Linux in Visual Studio Code",
+               "type": "url",
+               "url": "https://code.visualstudio.com/docs/cpp/config-linux"
+            } ],
+            "date_added": "13273684240536864",
+            "date_modified": "13274294157409108",
+            "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
+            "id": "11",
+            "name": "Info",
+            "type": "folder"
+         }, {
+            "date_added": "13274671479751439",
+            "guid": "fb5d8b48-4d8f-425f-a4ba-97593d709598",
+            "id": "32",
+            "name": "pvetere - Google Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/15JB5fTDN1ngrDoW_INaloWu-ETtED6P5"
+         } ],
+         "date_added": "13273682670331517",
+         "date_modified": "13274671479751439",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13273682670331519",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13273682670331520",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

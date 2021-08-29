@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+trap 'echo "trap"; pkill -9 -P $$; wait' 0
+
+pkill -9 memsqld;
+cd $PATH_TO_MEMSQL/debug;
+rm -rf data;
+rm -rf debug;
+./memsqld --minimum-core-count=1 --singlebox --port 3306 "$@" &
+until memclient 3306 -e 'select 1' > /dev/null; do
+      sleep 1
+done
+memclient 3306 -e 'create database if not exists x_db';
+wait
+

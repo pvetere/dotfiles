@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CI=
+if [ "$1" = '-i' ] ; then
+    CI="-i"
+    shift
+fi
+
+grep -r${CI} "$@" 2>&1 | grep -v "^Binary file.*matches" | grep "$1" --color=always
+

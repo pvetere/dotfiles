@@ -1,0 +1,26 @@
+[global_config]
+  focus = mouse
+  title_transmit_bg_color = "#513fbf"
+  title_receive_fg_color = "#513fbf"
+  title_receive_bg_color = "#ffb200"
+  title_inactive_fg_color = "#babdb6"
+  title_inactive_bg_color = "#2a2064"
+  inactive_color_offset = 0.9013761467889908
+[keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    scrollback_lines = 2000
+    use_custom_command = True
+    custom_command = clear && zsh
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 862:23
+      maximised = False
+      fullscreen = False
+      size = 1284, 738
+[plugins]
