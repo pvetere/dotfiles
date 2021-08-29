@@ -9,7 +9,7 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 # Path
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:$HOME/go/bin:$PATH"
+export PATH="$HOME/bin:$HOME/bin-priv:/usr/local/bin:/usr/local/sbin:/usr/sbin:$HOME/go/bin:$PATH"
 
 # Editor
 if which nvim > /dev/null 2>&1 ; then
@@ -34,8 +34,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# MEMSQL stuff
+# MemSQL
 source ~/memsql/.memsqlrc
 
+# Rust
 . "$HOME/.cargo/env"
 

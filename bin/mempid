@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo $(lsof -a -iTCP:$1 -sTCP:LISTEN | tail -n 1 | awk '{print $2}')
-

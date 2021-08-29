@@ -1,4 +1,0 @@
-#!/bin/sh
-
-gdb -p $(mempid 3306)
-

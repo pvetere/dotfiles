@@ -1,16 +1,8 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
+#ANTIBODY_HOME="$(antibody home)"
+#ZSH="$ANTIBODY_HOME/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
 export ZSH="/home/pvetere/.oh-my-zsh"
-
-
-function reload-gtk-theme() {
-    emulate -L zsh
-    theme=$(gsettings get org.gnome.desktop.interface gtk-theme)
-    gsettings set org.gnome.desktop.interface gtk-theme ''
-    sleep 1
-    gsettings set org.gnome.desktop.interface gtk-theme $theme
-}
 
 # Usage:  prompt-length TEXT [COLUMNS]
 function prompt-length() {
