@@ -1,0 +1,55 @@
+#!/bin/bash
+
+usage() {
+    cat <<EOF
+Usage: $0 [-f]
+
+    Push private repos.  By default, the changed files are just printed.  If -f
+    is specified, they will be pushed.
+
+EOF
+    exit 1
+}
+
+PUSH=0
+while [ $# -gt 0 ] ; do
+    case $1 in 
+        -f) 
+            PUSH=1 
+            shift
+            ;;
+        *) 
+            usage
+            ;;
+    esac
+done
+
+PRIV_REPOS=$(cat <<EOF
+    $HOME/.ssh
+    $HOME/.gnupg
+    $HOME/.vpn-data
+    $HOME/notes
+    $HOME/bin-priv
+EOF
+)
+
+for R in $PRIV_REPOS ; do
+    cd $R
+    echo "=================================================================="
+    echo "Checking $R ..."
+    F=$(git status --porcelain | awk '{print $2;}')
+    if [ -n "$F" ] ; then
+        echo "Changed:"
+        echo "$F" | tr ' ' '\n' | sed 's/^/        /'
+        if [ $PUSH -eq 1 ] ; then
+            echo "Pushing...:"
+            (
+                git add .
+                git commit -m update
+                git push
+            )
+            echo "Done."
+        fi
+    fi
+done
+

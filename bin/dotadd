@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+cd ~/
+yadm add $(yadm status --porcelain | awk '{print $2;}')
+
