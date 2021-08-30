@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
 cd ~/
-yadm add $(yadm status --porcelain | awk '{print $2;}')
+yadm add $(yadm status --porcelain | grep -v '^D' | awk '{print $2;}')
 

@@ -13,6 +13,7 @@
     cursor_color = "#aaaaaa"
     font = Ubuntu Mono 13
     show_titlebar = False
+    scrollbar_position = hidden
     scrollback_lines = 2000
     use_custom_command = True
     custom_command = clear && zsh

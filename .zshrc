@@ -43,7 +43,7 @@ function set-prompt() {
 
     local git_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
 
-    local frm_color=62
+    local frm_color=53
     local dir_color=80
 
     local frm_fmt="%F{$frm_color}"

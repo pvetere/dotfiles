@@ -18,6 +18,19 @@ super + F4
 super + {Left,Right}
 	bspc desktop -f {prev,next}
 
+# select the desktop
 super + {1,2,3,4,5,6,7,8,9,0}
     bspc desktop -f {I,II,III,IV,V,VI,VII,VIII,IX,X}
+
+# set split direction relative to focused window
+super + ctrl + alt + {Left,Right,Up,Down}
+    echo {west,east,north,south} > ~/.bspwm.split_dir
+
+# delete the split rule
+super + ctrl + alt + Delete
+    rm -rf ~/.bspwm.split_dir
+
+# clear screen
+super + l
+    clear
 
