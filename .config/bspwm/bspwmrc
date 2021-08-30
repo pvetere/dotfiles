@@ -12,7 +12,8 @@ bspc monitor HDMI-1 -d VI VII VIII IX X
 
 # Solid background color.
 #hsetroot -solid '#220077'
-hsetroot -solid '#000000'
+#hsetroot -solid '#000000'
+hsetroot -solid '#1e1c55'
 
 bspc config border_width          1
 bspc config window_gap            3
@@ -29,7 +30,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # Compositor.
-compton &
+#compton &
 
 # Polybar.
 pkill polybar
