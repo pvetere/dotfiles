@@ -1,12 +1,18 @@
 #! /bin/sh
 
-# Define desktops
-bspc monitor eDP-1  -d I II III IV V
-bspc monitor HDMI-1 -d VI VII VIII IX X
-
-# Select monitor layout
-~/bin/homemon
-#~/bin/workmon
+# Define desktops and select monitors.
+if ~/bin/is-workmon ; then
+    # Work config
+    bspc monitor eDP-1  -d I II III IV V
+    bspc monitor DP-3-1 -d VI VII VIII IX X
+    bspc monitor DP-3-2 -d VI VII VIII IX X
+    ~/bin/workmon
+else
+    # Home config
+    bspc monitor eDP-1  -d I II III IV V
+    bspc monitor HDMI-1 -d VI VII VIII IX X
+    ~/bin/homemon
+fi
 
 # Solid background color.
 hsetroot -solid '#1e1c55'

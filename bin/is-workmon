@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xrandr | grep 'DP-3-1 connected' > /dev/null 2>&1
+

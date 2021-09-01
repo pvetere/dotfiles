@@ -1,0 +1,41 @@
+#!/bin/bash
+
+usage() {
+    cat <<EOF
+Usage: $0 [-f]
+
+    Push public dotfiles repo.  By default, the changed files are just printed.  If -f
+    is specified, they will be pushed.
+
+EOF
+    exit 1
+}
+
+PUSH=0
+while [ $# -gt 0 ] ; do
+    case $1 in 
+        -f) 
+            PUSH=1 
+            shift
+            ;;
+        *) 
+            usage
+            ;;
+    esac
+done
+
+cd $HOME
+F=$(yadm status --porcelain | awk '{print $2;}')
+if [ -n "$F" ] ; then
+    echo "Changed:"
+    echo "$F" | tr ' ' '\n' | sed 's/^/        /'
+    if [ $PUSH -eq 1 ] ; then
+        echo "Pushing...:"
+        (
+            yadm commit -m update
+            yadm push
+        )
+        echo "Done."
+    fi
+fi
+

@@ -2,4 +2,5 @@
 
 cd ~/
 yadm add $(yadm status --porcelain | grep -v '^D' | awk '{print $2;}')
+yadm add $HOME/bin
 
