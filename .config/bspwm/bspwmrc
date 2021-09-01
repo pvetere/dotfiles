@@ -1,20 +1,17 @@
 #! /bin/sh
 
-sxhkd &
-
+# Define desktops
 bspc monitor eDP-1  -d I II III IV V
 bspc monitor HDMI-1 -d VI VII VIII IX X
 
-# Position monitors.
-# Home
+# Select monitor layout
 ~/bin/homemon
 #~/bin/workmon
 
 # Solid background color.
-#hsetroot -solid '#220077'
-#hsetroot -solid '#000000'
 hsetroot -solid '#1e1c55'
 
+# Basic display.
 bspc config border_width          0
 bspc config window_gap            6
 bspc config split_ratio           0.52
@@ -23,18 +20,18 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config focused_border_color  '#513fbf'
 
+# External rules.
 bspc config external_rules_command ~/.config/bspwm/split-rule
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-
 # Compositor.
+pkill picom
 picom --experimental-backends -b
 
 # Polybar.
 pkill polybar
-~/.config/polybar/launch-pete.sh
+~/.config/polybar/launch.sh
+
+# Key mapper.
+pkill sxhkd
+sxhkd &
 

@@ -6,5 +6,5 @@ if [ $# -eq 0 ] ; then
 fi
 
 cd ~/notes
-grep "$@"
+grep "$@" *
 

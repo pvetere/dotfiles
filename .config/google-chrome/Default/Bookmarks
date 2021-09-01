@@ -1,5 +1,5 @@
 {
-   "checksum": "272b85344a450a058f39fb1553795ded",
+   "checksum": "b511bf48f13fbd6d2cbaaf0003151eb7",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -59,33 +59,56 @@
             "type": "url",
             "url": "https://memsql.atlassian.net/wiki/spaces/LAUNCH/overview"
          }, {
-            "date_added": "13273771489430294",
-            "guid": "f81ab5e6-f167-40da-b1b4-f27d38587181",
-            "id": "20",
-            "name": "memsql",
-            "type": "url",
-            "url": "https://github.com/memsql/memsql"
+            "children": [ {
+               "date_added": "13273771489430294",
+               "guid": "f81ab5e6-f167-40da-b1b4-f27d38587181",
+               "id": "20",
+               "name": "memsql",
+               "type": "url",
+               "url": "https://github.com/memsql/memsql"
+            }, {
+               "date_added": "13274804697584747",
+               "guid": "b674c13c-74e3-4680-9780-e829e2658261",
+               "id": "35",
+               "name": "SingleStore Labs · GitHub",
+               "type": "url",
+               "url": "https://github.com/singlestore-labs"
+            }, {
+               "date_added": "13273683765286564",
+               "guid": "7d0365b1-6fc2-4073-85b7-04f0e8b3ffdb",
+               "id": "8",
+               "name": "GitLab",
+               "type": "url",
+               "url": "https://gitlab.cloud.memcompute.com/"
+            } ],
+            "date_added": "13274804669822464",
+            "date_modified": "13274804708107129",
+            "guid": "c36c2571-2c62-4ea1-95d2-1656c0e4d9e5",
+            "id": "34",
+            "name": "Repos",
+            "type": "folder"
          }, {
-            "date_added": "13273683765286564",
-            "guid": "7d0365b1-6fc2-4073-85b7-04f0e8b3ffdb",
-            "id": "8",
-            "name": "GitLab",
-            "type": "url",
-            "url": "https://gitlab.cloud.memcompute.com/"
-         }, {
-            "date_added": "13274294157409108",
-            "guid": "02c8943c-b932-43d0-ab3b-2b2b46b7e825",
-            "id": "29",
-            "name": "Portal",
-            "type": "url",
-            "url": "https://portal.singlestore.com/admin"
-         }, {
-            "date_added": "13274294369207425",
-            "guid": "3dbadf4c-5271-4799-af13-375f4873968f",
-            "id": "30",
-            "name": "Freya",
-            "type": "url",
-            "url": "https://freya.internal.memcompute.com/"
+            "children": [ {
+               "date_added": "13274294157409108",
+               "guid": "02c8943c-b932-43d0-ab3b-2b2b46b7e825",
+               "id": "29",
+               "name": "Portal",
+               "type": "url",
+               "url": "https://portal.singlestore.com/admin"
+            }, {
+               "date_added": "13274294369207425",
+               "guid": "3dbadf4c-5271-4799-af13-375f4873968f",
+               "id": "30",
+               "name": "Freya",
+               "type": "url",
+               "url": "https://freya.internal.memcompute.com/"
+            } ],
+            "date_added": "13274804717206775",
+            "date_modified": "13274908236527678",
+            "guid": "c7de2970-586a-419a-b71f-328190052498",
+            "id": "36",
+            "name": "Releng",
+            "type": "folder"
          }, {
             "children": [ {
                "date_added": "13273684243617551",
@@ -143,23 +166,23 @@
                "name": "Get Started with C++ on Linux in Visual Studio Code",
                "type": "url",
                "url": "https://code.visualstudio.com/docs/cpp/config-linux"
+            }, {
+               "date_added": "13274908236527678",
+               "guid": "183f1456-6f95-4353-9013-44d17a5e8dec",
+               "id": "38",
+               "name": "How To Install the Apache Web Server on Debian 9 | DigitalOcean",
+               "type": "url",
+               "url": "https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-9"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13274294157409108",
+            "date_modified": "13274908240085315",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",
             "type": "folder"
-         }, {
-            "date_added": "13274671479751439",
-            "guid": "fb5d8b48-4d8f-425f-a4ba-97593d709598",
-            "id": "32",
-            "name": "pvetere - Google Drive",
-            "type": "url",
-            "url": "https://drive.google.com/drive/folders/15JB5fTDN1ngrDoW_INaloWu-ETtED6P5"
          } ],
          "date_added": "13273682670331517",
-         "date_modified": "13274671479751439",
+         "date_modified": "13274804727080402",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Bookmarks bar",
