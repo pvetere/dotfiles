@@ -5,7 +5,7 @@ if ~/bin/is-workmon ; then
     # Work config
     bspc monitor eDP-1  -d I II III IV V
     bspc monitor DP-3-1 -d VI VII VIII IX X
-    bspc monitor DP-3-2 -d VI VII VIII IX X
+    bspc monitor DP-3-2 -d IX X
     ~/bin/workmon
 else
     # Home config

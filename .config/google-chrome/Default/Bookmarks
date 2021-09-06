@@ -1,5 +1,5 @@
 {
-   "checksum": "b511bf48f13fbd6d2cbaaf0003151eb7",
+   "checksum": "d900a1bed8478efb03895b32b4f7b467",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -102,9 +102,16 @@
                "name": "Freya",
                "type": "url",
                "url": "https://freya.internal.memcompute.com/"
+            }, {
+               "date_added": "13275156218986648",
+               "guid": "b966c65e-fe39-4049-a1b3-996d8615a038",
+               "id": "42",
+               "name": "Performing a memSQL Server Release - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/716341255/Performing+a+memSQL+Server+Release"
             } ],
             "date_added": "13274804717206775",
-            "date_modified": "13274908236527678",
+            "date_modified": "13275157933347295",
             "guid": "c7de2970-586a-419a-b71f-328190052498",
             "id": "36",
             "name": "Releng",
@@ -173,16 +180,44 @@
                "name": "How To Install the Apache Web Server on Debian 9 | DigitalOcean",
                "type": "url",
                "url": "https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-9"
+            }, {
+               "date_added": "13275102345867990",
+               "guid": "4bb565cb-51b6-4f3d-a314-3243e8ae09ec",
+               "id": "40",
+               "name": "Enabling the HTTP API",
+               "type": "url",
+               "url": "https://docs.singlestore.com/db/v7.5/en/reference/http-api/enabling-the-http-api.html"
+            }, {
+               "date_added": "13275109231137366",
+               "guid": "c00e30dd-12e1-4b80-89ad-ca591587c9e9",
+               "id": "41",
+               "name": "Enterprise Licenses for Internal Use - Post Sales - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/PS/pages/556400861/Enterprise+Licenses+for+Internal+Use"
+            }, {
+               "date_added": "13275157933347295",
+               "guid": "bf416468-1e36-4154-a639-1ed54f98b51d",
+               "id": "43",
+               "name": "Getting started developing MemSQL - Engineering - Wiki",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/315949352/Getting+started+developing+MemSQL"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13274908240085315",
+            "date_modified": "13275157942553129",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",
             "type": "folder"
+         }, {
+            "date_added": "13275102181988210",
+            "guid": "e855b246-fc5c-43f9-b287-5ae4c531b3a2",
+            "id": "39",
+            "name": "singlestore/cluster-in-a-box - Docker Image | Docker Hub",
+            "type": "url",
+            "url": "https://hub.docker.com/r/singlestore/cluster-in-a-box/tags"
          } ],
          "date_added": "13273682670331517",
-         "date_modified": "13274804727080402",
+         "date_modified": "13275102345867990",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Bookmarks bar",

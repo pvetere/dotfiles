@@ -9,7 +9,7 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 # Path
-export PATH="$HOME/bin:$HOME/bin-priv:/usr/local/bin:/usr/local/sbin:/usr/sbin:$HOME/go/bin:$PATH"
+export PATH="$HOME/bin:$HOME/bin-priv:/usr/local/bin:/usr/local/sbin:/usr/sbin:$HOME/go/bin:/snap/bin:$HOME/code/git-submodule-tools/bin:$PATH"
 
 # Libraries
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64

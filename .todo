@@ -1,0 +1,23 @@
+- cube.js
+    - how well does framework work for doing KPIs?
+    - how well do they represent simple questions on frontend that cause complex queries on the backend?
+    - Looker dashboards?
+
+- http apis
+    - need to contact adam about releasing -- from carl:
+         For the server release - only server releng is allowed to do it. 
+         You will need to coordinate with Adam and Robbie (@robbie) to figure out when the next patch release is going out
+         the changes will need to be ported into the 7.5 release train brach
+         but talk to @adam about that first to see what the status is
+    - v---- RELEASE AFTER above two items done -----v
+    - add sanity tests using github actions + the cluster-in-a-box container
+      to run singlestore
+        - What are Git workflows/actions?  Bailey has example
+    - what is the path to releasing packages on the corresponding package
+      repos?  Carl has access to the npm repo for singlestore; what is 
+      equivalent for PHP?
+
+- wasm
+    - store scope
+    - signal handling
+

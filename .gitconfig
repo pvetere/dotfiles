@@ -3,3 +3,7 @@
 	email = pvetere@singlestore.com
 [alias]
 	wdiff = diff
+[init]
+	defaultBranch = main
+[status]
+	submoduleSummary = true
