@@ -7,6 +7,10 @@ xrandr \
     --output DP-3-2 --mode 2560x1440 --rotate left   --pos 2560x0             \
     --verbose
 
+bspc monitor eDP-1  -d I II III IV V
+bspc monitor DP-3-1 -d VI VII VIII IX X
+bspc monitor DP-3-2 -d IX X
+
 #pkill picom
 #picom --experimental-backends -b
 

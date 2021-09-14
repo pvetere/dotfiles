@@ -13,9 +13,6 @@
     - add sanity tests using github actions + the cluster-in-a-box container
       to run singlestore
         - What are Git workflows/actions?  Bailey has example
-    - what is the path to releasing packages on the corresponding package
-      repos?  Carl has access to the npm repo for singlestore; what is 
-      equivalent for PHP?
 
 - wasm
     - store scope

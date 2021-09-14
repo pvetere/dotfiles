@@ -1,6 +1,12 @@
 #!/bin/sh
 
-xrandr --output eDP-1 --primary --brightness .75 --mode 1920x1080 --rotate normal --pos 760x1440 --output HDMI-1 --brightness 1.5 --mode 3440x1440 --rotate normal --pos 0x0 --verbose
+xrandr \
+    --output eDP-1  --primary --brightness .75 --mode 1920x1080 --rotate normal --pos 760x1440 \
+    --output HDMI-1           --brightness 1.5 --mode 3440x1440 --rotate normal --pos 0x0      \
+    --verbose
 
-#~/.config/polybar/launch.sh
+bspc monitor eDP-1  -d I II III IV V
+bspc monitor HDMI-1 -d VI VII VIII IX X
+
+~/.config/polybar/launch.sh
 

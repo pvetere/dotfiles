@@ -1,5 +1,5 @@
 {
-   "checksum": "d900a1bed8478efb03895b32b4f7b467",
+   "checksum": "f3632e9667e586a08e9c01c5b47ad594",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -201,9 +201,30 @@
                "name": "Getting started developing MemSQL - Engineering - Wiki",
                "type": "url",
                "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/315949352/Getting+started+developing+MemSQL"
+            }, {
+               "date_added": "13275683068564610",
+               "guid": "d6acf4d5-e06c-42d6-ab4d-3a1793cb8af0",
+               "id": "45",
+               "name": "Company Directory - Small Improvements",
+               "type": "url",
+               "url": "https://singlestore.small-improvements.com/app/company/directory"
+            }, {
+               "date_added": "13275684370070004",
+               "guid": "430bc1cf-f077-461e-892e-4c80f328af00",
+               "id": "46",
+               "name": "Explore Codebase for Query Processing - Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/303988743/Explore+Codebase+for+Query+Processing"
+            }, {
+               "date_added": "13275756736852616",
+               "guid": "ad04684b-48de-4bb6-9fff-dee3d4c637ca",
+               "id": "47",
+               "name": "Fonts · polybar/polybar Wiki",
+               "type": "url",
+               "url": "https://github.com/polybar/polybar/wiki/Fonts"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13275157942553129",
+            "date_modified": "13275756736852616",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",
@@ -215,9 +236,16 @@
             "name": "singlestore/cluster-in-a-box - Docker Image | Docker Hub",
             "type": "url",
             "url": "https://hub.docker.com/r/singlestore/cluster-in-a-box/tags"
+         }, {
+            "date_added": "13275495774426402",
+            "guid": "f4d8b725-1d87-4d6d-9311-4c7023018289",
+            "id": "44",
+            "name": "Paligo",
+            "type": "url",
+            "url": "https://singlestore.paligoapp.com/#/dashboard"
          } ],
          "date_added": "13273682670331517",
-         "date_modified": "13275102345867990",
+         "date_modified": "13275683068564610",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Bookmarks bar",

@@ -89,5 +89,10 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source ~/.alias_zshrc
 
+if [ -z "${SSH_AUTH_SOCK}" ] ; then
+    eval `ssh-agent -s`
+    ssh-add
+fi
+
 eval "$(direnv hook zsh)"
 
