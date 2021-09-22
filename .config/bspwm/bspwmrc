@@ -11,6 +11,7 @@ fi
 
 # Solid background color.
 hsetroot -solid '#1e1c55'
+xsetroot -cursor_name left_ptr
 
 # Basic display.
 bspc config border_width          0
@@ -20,6 +21,9 @@ bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config focused_border_color  '#513fbf'
+
+# Rules.
+bspc rule -a Blueman-manager state=floating
 
 # External rules.
 bspc config external_rules_command ~/.config/bspwm/split-rule

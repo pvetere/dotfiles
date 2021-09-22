@@ -1,5 +1,5 @@
 {
-   "checksum": "f3632e9667e586a08e9c01c5b47ad594",
+   "checksum": "3867c91e196ea5b50c624bc3dfed3cb5",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -222,9 +222,23 @@
                "name": "Fonts · polybar/polybar Wiki",
                "type": "url",
                "url": "https://github.com/polybar/polybar/wiki/Fonts"
+            }, {
+               "date_added": "13276272740679939",
+               "guid": "895a3651-5916-40ec-8bf7-cffe3523f650",
+               "id": "48",
+               "name": "Partner License Keys - Partner Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/PE/pages/279019548/Partner+License+Keys"
+            }, {
+               "date_added": "13276274300889521",
+               "guid": "05964454-4cf5-48aa-9df7-3e0566511fcf",
+               "id": "49",
+               "name": "How to connect with bluetooth device using bluetoothctl from script? / Newbie Corner / Arch Linux Forums",
+               "type": "url",
+               "url": "https://bbs.archlinux.org/viewtopic.php?id=215194"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13275756736852616",
+            "date_modified": "13276274300889521",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",
