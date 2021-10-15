@@ -1,5 +1,5 @@
 {
-   "checksum": "3867c91e196ea5b50c624bc3dfed3cb5",
+   "checksum": "8f63bb5fd3bc6d0a4ec1602efc98d60a",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -236,9 +236,16 @@
                "name": "How to connect with bluetooth device using bluetoothctl from script? / Newbie Corner / Arch Linux Forums",
                "type": "url",
                "url": "https://bbs.archlinux.org/viewtopic.php?id=215194"
+            }, {
+               "date_added": "13277258266301801",
+               "guid": "1427d1bf-7775-41ed-af14-713881f1cf88",
+               "id": "50",
+               "name": "Merge 'Add initial support for WebAssembly in user-defined functions … · scylladb/scylla@3f2c680",
+               "type": "url",
+               "url": "https://github.com/scylladb/scylla/commit/3f2c680b70d213b8eb76b63f4e54e46225ed9923"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13276274300889521",
+            "date_modified": "13277258266301801",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",

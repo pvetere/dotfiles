@@ -100,3 +100,10 @@ eval "$(direnv hook zsh)"
 export WASMTIME_HOME="$HOME/.wasmtime"
 
 export PATH="$WASMTIME_HOME/bin:$PATH"
+# Wasienv
+export WASIENV_DIR="/home/pvetere/.wasienv"
+[ -s "$WASIENV_DIR/wasienv.sh" ] && source "$WASIENV_DIR/wasienv.sh"
+
+# Wasmer
+export WASMER_DIR="/home/pvetere/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"

@@ -8,7 +8,10 @@ setopt HIST_IGNORE_SPACE
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
-# Path
+# Don't quit the shell window accidentally.  Press Ctrl-D 5x.
+set -o ignoreeof
+#export IGNOREEOF=5
+
 export PATH="$HOME/bin:$HOME/bin-priv:/usr/local/bin:/usr/local/sbin:/usr/sbin:$HOME/go/bin:/snap/bin:$HOME/code/git-submodule-tools/bin:$HOME/.cargo/bin:$PATH"
 
 # Libraries
@@ -42,4 +45,13 @@ source ~/memsql/.memsqlrc
 
 # Rust
 . "$HOME/.cargo/env"
+
+# Emscripten
+export EMSDK=$HOME/code/emsdk
+export PATH="$PATH:$EMSDK:$EMSDK/upstream/emscripten:$EMSDK/node/14.15.5_64bit/bin"
+export EM_CONFIG="$EMSDK/.emscripten"
+export EMSDK_NODE="$EMSDK/node/14.15.5_64bit/bin/node"
+
+# WASI
+source $HOME/.wasienv/wasienv.sh
 

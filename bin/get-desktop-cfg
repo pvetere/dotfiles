@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+if xrandr | grep 'DP-3-1 connected' > /dev/null 2>&1 ; then
+    echo "WORK"
+elif xrandr | grep 'HDMI-1 connected' > /dev/null 2>&1 ; then
+    echo "HOME"
+else
+    echo "UNKNOWN"
+fi
+

@@ -22,3 +22,6 @@ set shiftwidth=4    " I don't really know what this one does, to be honest.
 set incsearch       " Show matches while typing search patterns
 set hlsearch        " Highlight all matches for a search
 
+set colorcolumn=81                " Indicate col 81 - Grey3
+highlight colorcolumn ctermbg=232
+

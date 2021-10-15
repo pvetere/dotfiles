@@ -44,4 +44,5 @@ alias mdless=/snap/mdless/current/bin/mdless
 
 alias pigs="du -h -d 1"
 alias todo="vi ~/.todo"
+alias m="cd ~/memsql"
 

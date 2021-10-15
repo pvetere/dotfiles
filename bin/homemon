@@ -1,12 +1,30 @@
-#!/bin/sh
+#!/usr/bin/bash
 
+# Update the monitor configuration.
 xrandr \
     --output eDP-1  --primary --brightness .75 --mode 1920x1080 --rotate normal --pos 760x1440 \
     --output HDMI-1           --brightness 1.5 --mode 3440x1440 --rotate normal --pos 0x0      \
     --verbose
 
-bspc monitor eDP-1  -d I II III IV V
-bspc monitor HDMI-1 -d VI VII VIII IX X
+# Initialize the monitor with a fake desktop so the real ones get
+# added in the correct spot.
+bspc monitor HDMI-1 -d FAKE $AUXDTPS
 
+# Move desktops to the aux monitor.
+AUXMON="HDMI-1"
+LAPDTPS="I II III IV V"
+AUXDTPS="VI VII VIII IX X"
+for DTP in $AUXDTPS ; do
+    bspc desktop "$DTP" -m "$AUXMON"
+done
+
+# Remove fake desktop.
+bspc desktop FAKE -r
+
+# Make sure the desktops have the right config now.
+bspc monitor HDMI-1 -d $AUXDTPS
+bspc monitor eDP-1  -d $LAPDTPS
+
+# Relaunch polybar.
 ~/.config/polybar/launch.sh
 

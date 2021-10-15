@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+
+# Get all monitors except the laptop one.
+LAPMON=eDP-1
+EXTMONS=$(bspc query -M --names | grep -v "$LAPMON")
+
+# Add a fake desktop for each non-laptop monitor.  BSPWM wants at least one
+# desktop per monitor.
+for MON in $EXTMONS; do 
+    bspc monitor "$MON" -a "FAKE-$MON"
+done
+
+# Move all real desktops to the laptop monitor
+DTPS=$(bspc query -D --names | grep -v '^FAKE-')
+for DTP in $DTPS ; do
+    # Only move it if it is not already on the laptop monitor.
+    if [ $(bspc query -M -d "$DTP" --names) != "$LAPMON" ] ; then
+        bspc desktop "$DTP" -m "$LAPMON"
+    fi
+done
+
+# Now we just have the fake desktops left.  Remove the non-laptop monitors
+# and the associated fake desktop.
+for MON in $EXTMONS; do
+    bspc monitor "$MON" -r
+    bspc desktop "FAKE-$MON" -r > /dev/null 2>&1
+done
+
+# Make sure we have the correct desktop configuration.
+bspc monitor eDP-1  -d I II III IV V VI VII VIII IX X
+
+xrandr \
+    --output eDP-1  --mode 1920x1080 --rotate normal --pos 0x0 --primary \
+    --verbose
+
+#pkill picom
+#picom --experimental-backends -b
+
+~/.config/polybar/launch.sh --force-laptop
+

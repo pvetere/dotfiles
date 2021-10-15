@@ -1,18 +1,43 @@
-#!/bin/sh
+#!/usr/bin/bash
 
-#xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --pos 320x1440 --output HDMI-1 --mode 2560x1440 --rotate normal --pos 0x0 --verbose
+# Update monitor configuration.
 xrandr \
     --output eDP-1  --mode 1920x1080 --rotate normal --pos 640x1440 --primary \
     --output DP-3-1 --mode 2560x1440 --rotate normal --pos 0x0                \
     --output DP-3-2 --mode 2560x1440 --rotate left   --pos 2560x0             \
     --verbose
 
-bspc monitor eDP-1  -d I II III IV V
-bspc monitor DP-3-1 -d VI VII VIII
-bspc monitor DP-3-2 -d IX X
+# Initialize the aux monitors with fake desktops so the real ones get added in
+# the correct spots.
+LAPMON="eDP-1"
+AUXMON1="DP-3-1"
+AUXMON2="DP-3-2"
+bspc monitor "$AUXMON1" -d "FAKE-$AUXMON1"
+bspc monitor "$AUXMON2" -d "FAKE-$AUXMON2"
+
+# Move desktops to the aux monitors.
+LAPDTPS="I II III IV V"
+AUXDTPS1="VI VII VIII"
+AUXDTPS2="IX X"
+for DTP in $AUXDTPS1 ; do
+    bspc desktop "$DTP" -m "AUXMON1"
+done
+for DTP in $AUXDTPS2 ; do
+    bspc desktop "$DTP" -m "AUXMON2"
+done
+
+# Remove fake desktops.
+bspc desktop "FAKE-$AUXMON1" -r
+bspc desktop "FAKE-$AUXMON2" -r
+
+# Make sure the desktops have the right config now.
+bspc monitor "$LAPMON"  -d $LAPDTPS
+bspc monitor "$AUXMON1" -d $AUXDTPS1
+bspc monitor "$AUXMON2" -d $AUXDTPS2
 
 #pkill picom
 #picom --experimental-backends -b
 
+# Relaunch polybar.
 ~/.config/polybar/launch.sh
 
