@@ -7,3 +7,10 @@
 	defaultBranch = main
 [status]
 	submoduleSummary = true
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+

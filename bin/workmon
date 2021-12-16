@@ -20,10 +20,10 @@ LAPDTPS="I II III IV V"
 AUXDTPS1="VI VII VIII"
 AUXDTPS2="IX X"
 for DTP in $AUXDTPS1 ; do
-    bspc desktop "$DTP" -m "AUXMON1"
+    bspc desktop "$DTP" -m "$AUXMON1"
 done
 for DTP in $AUXDTPS2 ; do
-    bspc desktop "$DTP" -m "AUXMON2"
+    bspc desktop "$DTP" -m "$AUXMON2"
 done
 
 # Remove fake desktops.
@@ -40,4 +40,7 @@ bspc monitor "$AUXMON2" -d $AUXDTPS2
 
 # Relaunch polybar.
 ~/.config/polybar/launch.sh
+
+# Restart BSPWM
+#bspc wm -r
 

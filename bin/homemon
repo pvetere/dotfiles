@@ -8,7 +8,7 @@ xrandr \
 
 # Initialize the monitor with a fake desktop so the real ones get
 # added in the correct spot.
-bspc monitor HDMI-1 -d FAKE $AUXDTPS
+bspc monitor HDMI-1 -d FAKE
 
 # Move desktops to the aux monitor.
 AUXMON="HDMI-1"

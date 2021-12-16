@@ -34,6 +34,15 @@
     scrollbar_position = hidden
     scrollback_lines = 2500
     use_system_font = False
+  [[nerd]]
+    icon_bell = False
+    background_color = "#180020"
+    cursor_color = "#aaaaaa"
+    font = Ubuntu Mono 10
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 5000
+    use_system_font = False
 [layouts]
   [[default]]
     [[[child0]]]

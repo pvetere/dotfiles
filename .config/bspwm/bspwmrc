@@ -1,12 +1,15 @@
-#! /bin/sh
+#!/usr/bin/bash
 
 # Define desktops and select monitors.
-if ~/bin/is-workmon ; then
-    # Work config
-    ~/bin/workmon
+CFGTYPE=$(~/bin/get-desktop-cfg)
+if [ $? -ne 0 ] ; then
+    ~/bin/lapmon
 else
-    # Home config
-    ~/bin/homemon
+    case "$CFGTYPE" in
+        WORK) ~/bin/workmon ;;
+        HOME) ~/bin/homemon ;;
+        *)    ~/bin/lapmon  ;;
+    esac
 fi
 
 # Solid background color.

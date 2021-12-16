@@ -1,5 +1,5 @@
 {
-   "checksum": "8f63bb5fd3bc6d0a4ec1602efc98d60a",
+   "checksum": "96a3bbdc44299035219403f6cc98c2f2",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -243,9 +243,23 @@
                "name": "Merge 'Add initial support for WebAssembly in user-defined functions … · scylladb/scylla@3f2c680",
                "type": "url",
                "url": "https://github.com/scylladb/scylla/commit/3f2c680b70d213b8eb76b63f4e54e46225ed9923"
+            }, {
+               "date_added": "13283278501642274",
+               "guid": "343778c5-169f-4bb6-b40f-376b68e91791",
+               "id": "56",
+               "name": "HOWTO Run the Weekly Engineering Meeting - Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/104518890/HOWTO+Run+the+Weekly+Engineering+Meeting"
+            }, {
+               "date_added": "13283988041935476",
+               "guid": "da734e5d-d359-44d9-9106-504fe28c734f",
+               "id": "58",
+               "name": "How to create and build 3rd party libraries - Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/1018069036/How+to+create+and+build+3rd+party+libraries"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13277258266301801",
+            "date_modified": "13283988041935476",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",
@@ -264,10 +278,39 @@
             "name": "Paligo",
             "type": "url",
             "url": "https://singlestore.paligoapp.com/#/dashboard"
+         }, {
+            "children": [ {
+               "date_added": "13282252301414393",
+               "guid": "fee0e87d-020a-4097-88a5-78a08d4c0af3",
+               "id": "53",
+               "name": "Memcached interview - Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/15499276/Memcached+interview"
+            }, {
+               "date_added": "13282255345330630",
+               "guid": "b0b6a84e-7c9c-4885-9158-c88b1d242852",
+               "id": "54",
+               "name": "Memcached Template - Google Docs",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/16GfigYZhc2FQDeQ-bJC5dPu5sUZzx_SMx_ZAOGRpyfk/edit"
+            }, {
+               "date_added": "13282675919857590",
+               "guid": "e4dd049e-014a-4297-a98d-bfe3620b1bec",
+               "id": "55",
+               "name": "SingleStore Connection Pool (Onsite Interview) - Google Docs",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/18mCc78eqer6wxBaHLg4mE1kdeMe1sKFkTrR44WxvoW8/edit"
+            } ],
+            "date_added": "13282252292438788",
+            "date_modified": "13283278501642274",
+            "guid": "cb5f2283-0bb7-4d8a-b935-0959494a7cd6",
+            "id": "52",
+            "name": "Interviews",
+            "type": "folder"
          } ],
          "date_added": "13273682670331517",
-         "date_modified": "13275683068564610",
-         "guid": "00000000-0000-4000-a000-000000000002",
+         "date_modified": "13282252301414393",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
          "type": "folder"
@@ -276,7 +319,7 @@
          "children": [  ],
          "date_added": "13273682670331519",
          "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000003",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
          "type": "folder"
@@ -285,7 +328,7 @@
          "children": [  ],
          "date_added": "13273682670331520",
          "date_modified": "0",
-         "guid": "00000000-0000-4000-a000-000000000004",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
          "id": "3",
          "name": "Mobile bookmarks",
          "type": "folder"

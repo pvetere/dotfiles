@@ -19,11 +19,12 @@ for DTP in $DTPS ; do
     fi
 done
 
-# Now we just have the fake desktops left.  Remove the non-laptop monitors
-# and the associated fake desktop.
+# Now we just have the fake desktops left.  Remove the non-laptop monitors and 
+# the associated fake desktop, then disable them.
 for MON in $EXTMONS; do
     bspc monitor "$MON" -r
     bspc desktop "FAKE-$MON" -r > /dev/null 2>&1
+    xrandr --output "$MON" --off
 done
 
 # Make sure we have the correct desktop configuration.
