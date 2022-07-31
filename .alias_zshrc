@@ -46,3 +46,9 @@ alias pigs="du -h -d 1"
 alias todo="vi ~/.todo"
 alias m="cd ~/memsql"
 
+##############################################################################
+# Demo stuff
+##############################################################################
+
+alias s2-dev-shell="~/code/singlestore-wasm-toolkit/scripts/dev-shell"
+

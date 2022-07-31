@@ -1,5 +1,5 @@
 {
-   "checksum": "96a3bbdc44299035219403f6cc98c2f2",
+   "checksum": "f929c0df74146dac2f2a2d14ade1a1a5",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -257,9 +257,37 @@
                "name": "How to create and build 3rd party libraries - Engineering - Confluence",
                "type": "url",
                "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/1018069036/How+to+create+and+build+3rd+party+libraries"
+            }, {
+               "date_added": "13286345861091509",
+               "guid": "46bef5ea-76cd-4af6-acfc-db9d9f025180",
+               "id": "60",
+               "name": "QP testing template - Google Docs",
+               "type": "url",
+               "url": "https://docs.google.com/document/d/1vrJZovnmwlB-JhXmYPmkyBCbZJfzlU8UvpqTRjx_elM/edit#heading=h.xpgh5odgqaek"
+            }, {
+               "date_added": "13287532062819339",
+               "guid": "04a05270-3805-4867-b6f4-84f9ce538088",
+               "id": "61",
+               "name": "MemSQL code libraries guide - Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/414548013/MemSQL+code+libraries+guide#MemSQLcodelibrariesguide-Memoryallocation"
+            }, {
+               "date_added": "13290883146313848",
+               "guid": "1c42a6de-f3ad-44d1-bf55-53ff25ef3d10",
+               "id": "64",
+               "name": "Bugfix: Clearly mark separation of non-scalar and scalar built-ins · memsql/memsql@d481fe6",
+               "type": "url",
+               "url": "https://github.com/memsql/memsql/commit/d481fe65da72515e7bee29e8fa72900efcf08460"
+            }, {
+               "date_added": "13290883181004005",
+               "guid": "14c8cd0e-a324-4bf8-abac-2e42f5604c02",
+               "id": "65",
+               "name": "Expanded Main Page - OSDev Wiki",
+               "type": "url",
+               "url": "https://wiki.osdev.org/Main_Page"
             } ],
             "date_added": "13273684240536864",
-            "date_modified": "13283988041935476",
+            "date_modified": "13290883181004005",
             "guid": "a05f27c8-ada7-4ff5-8b90-cf1d7e042786",
             "id": "11",
             "name": "Info",
@@ -300,9 +328,23 @@
                "name": "SingleStore Connection Pool (Onsite Interview) - Google Docs",
                "type": "url",
                "url": "https://docs.google.com/document/d/18mCc78eqer6wxBaHLg4mE1kdeMe1sKFkTrR44WxvoW8/edit"
+            }, {
+               "date_added": "13290709159147779",
+               "guid": "7e10b42a-eb83-4fd7-8fbf-c23570d3a518",
+               "id": "62",
+               "name": "Malloc interview - Engineering - Confluence",
+               "type": "url",
+               "url": "https://memsql.atlassian.net/wiki/spaces/ENG/pages/73891842/Malloc+interview"
+            }, {
+               "date_added": "13290709246134703",
+               "guid": "14e5b8a4-6127-492a-afd6-95702d11c4d0",
+               "id": "63",
+               "name": "Codeshare - Share code in real-time with developers in your browser",
+               "type": "url",
+               "url": "https://codeshare.io/"
             } ],
             "date_added": "13282252292438788",
-            "date_modified": "13283278501642274",
+            "date_modified": "13290883146313848",
             "guid": "cb5f2283-0bb7-4d8a-b935-0959494a7cd6",
             "id": "52",
             "name": "Interviews",

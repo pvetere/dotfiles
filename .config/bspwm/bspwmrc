@@ -27,7 +27,8 @@ bspc config focused_border_color  '#513fbf'
 
 # Rules.
 bspc rule -a Blueman-manager state=floating
-bspc rule -a Meld state=floating
+bspc rule -a Meld state=floating rectangle=1900x1040+10+10
+bspc rule -a Nm-connection-editor state=floating
 
 # External rules.
 bspc config external_rules_command ~/.config/bspwm/split-rule

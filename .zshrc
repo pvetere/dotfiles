@@ -80,10 +80,10 @@ plugins=(
     fd
     zsh-autosuggestions
     web-search
-    copydir
+    copypath
     copyfile
     dirhistory
-    zsh_reload
+    #zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,3 +107,9 @@ export WASIENV_DIR="/home/pvetere/.wasienv"
 # Wasmer
 export WASMER_DIR="/home/pvetere/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/pvetere/tmp/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/home/pvetere/tmp/gcloud/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/pvetere/tmp/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/pvetere/tmp/gcloud/google-cloud-sdk/completion.zsh.inc'; fi

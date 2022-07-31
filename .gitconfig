@@ -3,6 +3,7 @@
 	email = pvetere@singlestore.com
 [alias]
 	wdiff = diff
+	exec = "!exec "
 [init]
 	defaultBranch = main
 [status]

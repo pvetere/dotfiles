@@ -41,7 +41,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # MemSQL
-source ~/memsql/.memsqlrc
+#source ~/memsql/.memsqlrc
 
 # Rust
 . "$HOME/.cargo/env"
@@ -55,3 +55,5 @@ export EMSDK_NODE="$EMSDK/node/14.15.5_64bit/bin/node"
 # WASI
 source $HOME/.wasienv/wasienv.sh
 
+
+if [ -e /home/pvetere/.nix-profile/etc/profile.d/nix.sh ]; then . /home/pvetere/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
